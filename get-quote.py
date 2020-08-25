@@ -2,10 +2,10 @@ def primary():
   print("Keep it logically awesome.")
 
   f = open("quotes.txt")
-  quotes = f.readlines()
+  quotes = f.read().splitlines()
   f.close()
 
-  print(quotes[13])
+  print(quotes)
 
 if __name__== "__main__":
   primary()
